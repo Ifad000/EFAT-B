@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 
 module.exports = {
   config: {
-    name: "shell",
+    name: "efuu",
     aliases: ['$','>'],
     version: "1.0",
     author: "Samir",
