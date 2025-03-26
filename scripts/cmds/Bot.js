@@ -155,7 +155,7 @@ module.exports.config = {
   name: "bot",
   aliases: ["robot","sim"],
   version: "1.6.9",
-  author: "Nazrul",
+  author: "Efuu",
   role: 0,
   description: "Talk with the bot or teach it new responses",
   category: "talk",
@@ -195,7 +195,7 @@ module.exports.onChat = async ({ api, event }) => {
   const cMessages = ["🎀 Hello bby!", "🎀 Hi there!", "🎀 Hey! How can I help?"];
   const userInput = body.toLowerCase().trim();
 
-  const keywords = ["bby", "baby", "bot", "বট", "robot"];
+  const keywords = ["bby", "baby", "bot", "বট", "efu", "jan", "robot"];
 
   if (keywords.some((keyword) => userInput.startsWith(keyword))) {
     const isQuestion = userInput.split(" ").length > 1;
