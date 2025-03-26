@@ -2,9 +2,9 @@ const fs = require("fs-extra");
 
 module.exports = {
 	config: {
-		name: "restart",
+		name: "rst",
 		version: "1.1",
-		author: "NTKhang",
+		author: "efat",//dev by efat
 		countDown: 5,
 		role: 2,
 		description: {
