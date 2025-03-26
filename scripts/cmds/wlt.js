@@ -1,9 +1,9 @@
 const { config } = global.GoatBot;
 module.exports = {
 	config: {
-		name: "wlt",
+		name: "wl",
 		version: "1.0",
-		author: "rehat--",
+		author: "efuu 🐔",
 		countDown: 5,
 		role: 2,
 		longDescription: {
@@ -27,21 +27,12 @@ module.exports = {
 			notAdmin: "⚠ | %1 users don't have whiteListIds role:\n%2",
 			missingIdRemove: "⚠ | Please enter ID or tag user to remove whiteListIds",
 			listAdmin: "👑 | List of whiteListIds:\n%1",
-      enable: "Turned on the mode only specific whiteListIds can use bot",
-      disable: "Turned off the mode only specific whiteListIds can use bot"
+      enable: "✅ Turned on",
+      disable: "✅ Turned off"
 		}
 	},
 
 	onStart: async function ({ message, args, usersData, event, getLang, api }) {
-    const permission = ["61564523816700","61565025325331"];
-    if (!permission.includes(event.senderID)) {
-      api.sendMessage(
-        "~Oh Baka! Seems you don't have permission to use this command!🐱",
-        event.threadID,
-        event.messageID
-      );
-      return;
-    }
     const { writeFileSync } = require("fs-extra");
 		switch (args[0]) {
 			case "add":
